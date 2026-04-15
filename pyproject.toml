@@ -1,0 +1,19 @@
+[project]
+name = "pdf2txt"
+version = "0.1.0"
+description = "Simple wrapper around pypdf to extract text from pdf files"
+readme = "README.md"
+authors = [
+    { name = "Aaron Ouellette", email = "aaronjo2@illinois.edu" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pypdf>=6.10.2",
+]
+
+[project.scripts]
+pdf2txt = "pdf2txt:main"
+
+[build-system]
+requires = ["uv_build>=0.10.12,<0.11.0"]
+build-backend = "uv_build"
